@@ -1,0 +1,233 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: BMS
+
+
+BO_ 1297 BatInfo: 8 Vector__XXX
+ SG_ FastChargePlugged : 2|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ BatHeater : 4|1@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1410 Interior_Temp: 8 Vector__XXX
+ SG_ Interior_Temp : 7|8@0+ (0.5,-49) [-49|78.5] "C" Vector__XXX
+
+BO_ 837 WhatTemp2: 8 Vector__XXX
+ SG_ Temp345B8 : 63|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Temp345B7 : 55|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Temp345B6 : 47|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Brightness1 : 23|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Brightness2 : 31|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ACinletTemp : 39|8@0+ (1,0) [0|0] "C" Vector__XXX
+
+BO_ 1583 TimeDate: 8 Vector__XXX
+ SG_ Date_year : 47|8@0+ (1,2015) [2015|2270] "year" Vector__XXX
+ SG_ Date_Day : 23|8@0+ (0.125,1) [0|0] "day" Vector__XXX
+ SG_ Date_Month : 55|8@0+ (0.0625,1) [0|0] "month" Vector__XXX
+ SG_ Time_min : 39|8@0+ (1,0) [0|0] "min" Vector__XXX
+ SG_ Time_h : 31|8@0+ (0.125,0) [0|0] "h" Vector__XXX
+ SG_ Time_s : 63|8@0+ (0.25,0) [0|0] "s" Vector__XXX
+
+BO_ 1408 EnergyConsumption: 8 Vector__XXX
+ SG_ EnergyUsed : 16|16@1+ (0.1,0) [0|0] "Ah" Vector__XXX
+ SG_ EnergyRegen : 7|16@0+ (0.1,0) [0|0] "Ah" Vector__XXX
+
+BO_ 1604 BatHeaterTemp: 8 Vector__XXX
+ SG_ BatHeaterInletTemp : 47|8@0+ (1,-50) [-50|205] "C" Vector__XXX
+ SG_ BatHeaterOutletTemp : 39|8@0- (1,-50) [0|0] "C" Vector__XXX
+ SG_ waterTemp2 : 15|8@0+ (1,0) [0|0] "C" Vector__XXX
+ SG_ waterTemp1 : 7|8@0+ (1,0) [0|0] "C" Vector__XXX
+
+BO_ 1417 TyreTempPressure: 8 Vector__XXX
+ SG_ TyrePressure : 47|8@0+ (1,0) [0|0] "kPa" Vector__XXX
+ SG_ TyreTemp : 31|8@0+ (1,-40) [0|0] "C" Vector__XXX
+ SG_ TyreNum : 7|8@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1601 ODO: 8 Vector__XXX
+ SG_ ODO : 23|32@0- (0.01,0) [0|0] "km" Vector__XXX
+
+BO_ 838 Car_distance: 8 Vector__XXX
+ SG_ CarDistance2 : 15|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ CarDistance1 : 7|8@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 885 DriveTrainTemp: 8 Vector__XXX
+ SG_ Collent_Temp : 55|8@0- (1,-50) [0|0] "" Vector__XXX
+ SG_ IGBT_Temp : 47|8@0+ (1,-50) [0|0] "" Vector__XXX
+ SG_ DynamicBrake : 35|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Traction : 34|1@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1284 Range: 8 Vector__XXX
+ SG_ range2 : 47|16@0+ (0.1,0) [0|0] "km" Vector__XXX
+ SG_ range1 : 31|16@0+ (0.1,0) [0|0] "km" Vector__XXX
+
+BO_ 1283 EnergyConsumeRate: 8 Vector__XXX
+ SG_ EnergyConsumeRate : 55|16@0+ (0.01,-100) [0|0] "kWh/100km" Vector__XXX
+
+BO_ 533 Voltage: 8 Vector__XXX
+ SG_ BatVolt : 39|16@0+ (0.02,0) [0|0] "V" Vector__XXX
+
+BO_ 584 Energy: 8 Vector__XXX
+ SG_ EnergyUsed : 55|16@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ RangeOrPercent : 39|16@0+ (1,0) [0|65535] "km%" Vector__XXX
+ SG_ Current248 : 23|16@0+ (0.04,-1000) [-1000|1621.4] "" Vector__XXX
+
+BO_ 532 Throttle: 8 Vector__XXX
+ SG_ throttle : 55|8@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 792 SpdAndTrip: 8 Vector__XXX
+ SG_ Speed : 47|16@0+ (0.1,0) [0|0] "kph" Vector__XXX
+ SG_ Trip : 31|16@0+ (0.01,0) [0|0] "km" Vector__XXX
+
+BO_ 801 Unknown1: 8 Vector__XXX
+ SG_ UnknownSig321 : 55|8@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 670 BrkCilinderPressure2: 8 Vector__XXX
+ SG_ BrkCilinderPressure : 23|16@0+ (1,0) [0|0] "Pa" Vector__XXX
+
+BO_ 668 BrkCilinderPressure: 8 Vector__XXX
+
+BO_ 666 NearWarning: 8 Vector__XXX
+
+BO_ 432 Steering: 8 Vector__XXX
+ SG_ SteeringWheelPos : 39|16@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 2565013514 BatModuleVoltTotal3: 8 BMS
+ SG_ BatModuleVoltTotal31 : 39|16@0+ (2,0) [0|600000] "mV" Vector__XXX
+ SG_ BatModuleVoltTotal30 : 7|16@0+ (2,0) [0|600000] "mV" Vector__XXX
+
+BO_ 2564947978 BatModuleVoltTotal2: 8 BMS
+ SG_ BatModuleVoltTotal21 : 39|16@0+ (2,0) [0|600000] "mV" Vector__XXX
+ SG_ BatModuleVoltTotal20 : 7|16@0+ (2,0) [0|600000] "mV" Vector__XXX
+
+BO_ 2564882442 BatModuleVoltTotal1: 8 BMS
+ SG_ BatModuleVoltTotal11 : 39|16@0+ (2,0) [0|600000] "mV" Vector__XXX
+ SG_ BatModuleVoltTotal10 : 7|16@0+ (2,0) [0|600000] "mV" Vector__XXX
+
+BO_ 2564816906 BatModuleVoltTotal0: 8 BMS
+ SG_ BatModuleVoltTotal01 : 39|16@0+ (2,0) [0|600000] "mV" Vector__XXX
+ SG_ BatModuleVoltTotal00 : 7|16@0+ (2,0) [0|600000] "mV" Vector__XXX
+
+BO_ 2466251714 BatCurrent: 8 BMS
+ SG_ BatCurrent : 23|24@0+ (1,-8388608) [-8388608|8388607] "mA" Vector__XXX
+
+BO_ 2565013511 BatModuleVoltMaxMin03: 8 BMS
+ SG_ BatVoltMinPos03 : 63|8@0+ (1,0) [0|120] "" Vector__XXX
+ SG_ BatVoltMaxPos03 : 39|8@0+ (1,0) [0|120] "" Vector__XXX
+ SG_ BatVoltMin03 : 47|16@0+ (0.1,0) [32000|43000] "mV" Vector__XXX
+ SG_ BatVoltMax03 : 23|16@0+ (0.1,0) [32000|43000] "mV" Vector__XXX
+
+BO_ 2564947975 BatModuleVoltMaxMin02: 8 BMS
+ SG_ BatVoltMinPos02 : 63|8@0+ (1,0) [0|120] "" Vector__XXX
+ SG_ BatVoltMaxPos02 : 39|8@0+ (1,0) [0|120] "" Vector__XXX
+ SG_ BatVoltMin02 : 47|16@0+ (0.1,0) [32000|43000] "mV" Vector__XXX
+ SG_ BatVoltMax02 : 23|16@0+ (0.1,0) [32000|43000] "mV" Vector__XXX
+
+BO_ 2564882439 BatModuleVoltMaxMin01: 8 BMS
+ SG_ BatVoltMinPos01 : 63|8@0+ (1,0) [0|120] "" Vector__XXX
+ SG_ BatVoltMaxPos01 : 39|8@0+ (1,0) [0|120] "" Vector__XXX
+ SG_ BatVoltMin01 : 47|16@0+ (0.1,0) [32000|43000] "mV" Vector__XXX
+ SG_ BatVoltMax01 : 23|16@0+ (0.1,0) [32000|43000] "mV" Vector__XXX
+
+BO_ 2565013513 BatModuleTempMaxMin03: 6 BMS
+ SG_ BatTempMinPos03 : 47|8@0+ (1,0) [0|100] "" Vector__XXX
+ SG_ BatTempMaxPos03 : 31|8@0+ (1,0) [0|100] "" Vector__XXX
+ SG_ BatTempMin03 : 39|8@0+ (1,-50) [-50|100] "C" Vector__XXX
+ SG_ BatTempMax03 : 23|8@0+ (1,-50) [-50|100] "C" Vector__XXX
+
+BO_ 2564947977 BatModuleTempMaxMin02: 6 BMS
+ SG_ BatTempMinPos02 : 47|8@0+ (1,0) [0|100] "" Vector__XXX
+ SG_ BatTempMaxPos02 : 31|8@0+ (1,0) [0|100] "" Vector__XXX
+ SG_ BatTempMin02 : 39|8@0+ (1,-50) [-50|100] "C" Vector__XXX
+ SG_ BatTempMax02 : 23|8@0+ (1,-50) [-50|100] "C" Vector__XXX
+
+BO_ 2564882441 BatModuleTempMaxMin01: 6 BMS
+ SG_ BatTempMinPos01 : 47|8@0+ (1,0) [0|100] "" Vector__XXX
+ SG_ BatTempMaxPos01 : 31|8@0+ (1,0) [0|100] "" Vector__XXX
+ SG_ BatTempMin01 : 39|8@0+ (1,-50) [-50|100] "C" Vector__XXX
+ SG_ BatTempMax01 : 23|8@0+ (1,-50) [-50|100] "C" Vector__XXX
+
+BO_ 2564816905 BatModuleTempMaxMin00: 8 BMS
+ SG_ BatTempMinPos00 : 47|8@0+ (1,0) [0|100] "" Vector__XXX
+ SG_ BatTempMaxPos00 : 31|8@0+ (1,0) [0|100] "" Vector__XXX
+ SG_ BatTempMin00 : 39|8@0+ (1,-50) [-50|100] "C" Vector__XXX
+ SG_ BatTempMax00 : 23|8@0+ (1,-50) [-50|100] "C" Vector__XXX
+
+BO_ 2564816903 BatModuleVoltMaxMin00: 8 BMS
+ SG_ BatVoltMinPos00 : 63|8@0+ (1,0) [0|120] "" Vector__XXX
+ SG_ BatVoltMaxPos00 : 39|8@0+ (1,0) [0|120] "" Vector__XXX
+ SG_ BatVoltMin00 : 47|16@0+ (0.1,0) [32000|43000] "mV" Vector__XXX
+ SG_ BatVoltMax00 : 23|16@0+ (0.1,0) [32000|43000] "mV" Vector__XXX
+
+
+
+CM_ SG_ 1297 FastChargePlugged "快充插枪指示";
+CM_ SG_ 1297 BatHeater "电池加热器开(1)/关(0)";
+CM_ SG_ 837 ACinletTemp "空调回风口温度？";
+CM_ SG_ 1604 BatHeaterInletTemp "电池加热器进水口温度";
+CM_ SG_ 1604 BatHeaterOutletTemp "电池加热器出水口温度";
+CM_ SG_ 1604 waterTemp2 "水温2";
+CM_ SG_ 1604 waterTemp1 "水温1
+";
+CM_ SG_ 885 Collent_Temp "IGBT水温";
+CM_ SG_ 885 Traction "牵引工况指示";
+CM_ SG_ 1284 range2 "SOC?";
+CM_ SG_ 1284 range1 "SOC?";
+CM_ BO_ 533 "动力电池电压";
+CM_ BO_ 584 "电流";
+CM_ SG_ 584 Current248 "ID=0x248的电流";
+CM_ BO_ 532 "电门踏板行程";
+CM_ BO_ 792 "小计里程&速度";
+CM_ SG_ 792 Speed "速度";
+CM_ SG_ 792 Trip "小计里程";
+CM_ BO_ 801 "未知报文1";
+CM_ BO_ 670 "闸缸压力？";
+CM_ BO_ 668 "闸缸压力？";
+CM_ BO_ 666 "接近报警？";
+CM_ SG_ 432 SteeringWheelPos "方向盘角度？";
+CM_ BO_ 2565013514 "电池模组电压(一条报文内有2个电压)";
+CM_ BO_ 2564947978 "电池模组电压(一条报文内有2个电压)";
+CM_ BO_ 2564882442 "电池模组电压(一条报文内有2个电压)";
+CM_ BO_ 2564816906 "电池模组电压(一条报文内有2个电压)";
+CM_ BO_ 2466251714 "电池组总电流(mA)";
+CM_ BO_ 2565013511 "电池模组内单体电压最高最低值";
+CM_ BO_ 2564947975 "电池模组内单体电压最高最低值";
+CM_ BO_ 2564882439 "电池模组内单体电压最高最低值";
+CM_ BO_ 2565013513 "电池模组内温度测点最高最低值";
+CM_ BO_ 2564947977 "电池模组内温度测点最高最低值";
+CM_ BO_ 2564882441 "电池模组内温度测点最高最低值";
+CM_ BO_ 2564816905 "电池模组内温度测点最高最低值";
+CM_ BO_ 2564816903 "电池模组内单体电压最高最低值";
+BA_DEF_  "BusType" STRING ;
+BA_DEF_DEF_  "BusType" "CAN";
+
