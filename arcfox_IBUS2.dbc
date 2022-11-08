@@ -191,43 +191,43 @@ BO_ 2564816903 BatModuleVoltMaxMin00: 8 BMS
 
 
 
-CM_ SG_ 1297 FastChargePlugged "����ǹָʾ";
-CM_ SG_ 1297 BatHeater "��ؼ�������(1)/��(0)";
-CM_ SG_ 837 ACinletTemp "�յ��ط���¶ȣ�";
-CM_ SG_ 1604 BatHeaterInletTemp "��ؼ�������ˮ���¶�";
-CM_ SG_ 1604 BatHeaterOutletTemp "��ؼ�������ˮ���¶�";
-CM_ SG_ 1604 waterTemp2 "ˮ��2";
-CM_ SG_ 1604 waterTemp1 "ˮ��1
+CM_ SG_ 1297 FastChargePlugged "快充插枪指示";
+CM_ SG_ 1297 BatHeater "电池加热器开(1)/关(0)";
+CM_ SG_ 837 ACinletTemp "空调回风口温度？";
+CM_ SG_ 1604 BatHeaterInletTemp "电池加热器进水口温度";
+CM_ SG_ 1604 BatHeaterOutletTemp "电池加热器出水口温度";
+CM_ SG_ 1604 waterTemp2 "水温2";
+CM_ SG_ 1604 waterTemp1 "水温1
 ";
-CM_ SG_ 885 Collent_Temp "IGBTˮ��";
-CM_ SG_ 885 Traction "ǣ������ָʾ";
+CM_ SG_ 885 Collent_Temp "IGBT水温";
+CM_ SG_ 885 Traction "牵引工况指示";
 CM_ SG_ 1284 range2 "SOC?";
 CM_ SG_ 1284 range1 "SOC?";
-CM_ BO_ 533 "������ص�ѹ";
-CM_ BO_ 584 "����";
-CM_ SG_ 584 Current248 "ID=0x248�ĵ���";
-CM_ BO_ 532 "����̤���г�";
-CM_ BO_ 792 "С�����&�ٶ�";
-CM_ SG_ 792 Speed "�ٶ�";
-CM_ SG_ 792 Trip "С�����";
-CM_ BO_ 801 "δ֪����1";
-CM_ BO_ 670 "բ��ѹ����";
-CM_ BO_ 668 "բ��ѹ����";
-CM_ BO_ 666 "�ӽ�������";
-CM_ SG_ 432 SteeringWheelPos "�����̽Ƕȣ�";
-CM_ BO_ 2565013514 "���ģ���ѹ(һ����������2����ѹ)";
-CM_ BO_ 2564947978 "���ģ���ѹ(һ����������2����ѹ)";
-CM_ BO_ 2564882442 "���ģ���ѹ(һ����������2����ѹ)";
-CM_ BO_ 2564816906 "���ģ���ѹ(һ����������2����ѹ)";
-CM_ BO_ 2466251714 "������ܵ���(mA)";
-CM_ BO_ 2565013511 "���ģ���ڵ����ѹ������ֵ";
-CM_ BO_ 2564947975 "���ģ���ڵ����ѹ������ֵ";
-CM_ BO_ 2564882439 "���ģ���ڵ����ѹ������ֵ";
-CM_ BO_ 2565013513 "���ģ�����¶Ȳ��������ֵ";
-CM_ BO_ 2564947977 "���ģ�����¶Ȳ��������ֵ";
-CM_ BO_ 2564882441 "���ģ�����¶Ȳ��������ֵ";
-CM_ BO_ 2564816905 "���ģ�����¶Ȳ��������ֵ";
-CM_ BO_ 2564816903 "���ģ���ڵ����ѹ������ֵ";
+CM_ BO_ 533 "动力电池电压";
+CM_ BO_ 584 "电流";
+CM_ SG_ 584 Current248 "ID=0x248的电流";
+CM_ BO_ 532 "电门踏板行程";
+CM_ BO_ 792 "小计里程&速度";
+CM_ SG_ 792 Speed "速度";
+CM_ SG_ 792 Trip "小计里程";
+CM_ BO_ 801 "未知报文1";
+CM_ BO_ 670 "闸缸压力？";
+CM_ BO_ 668 "闸缸压力？";
+CM_ BO_ 666 "接近报警？";
+CM_ SG_ 432 SteeringWheelPos "方向盘角度？";
+CM_ BO_ 2565013514 "电池模组电压(一条报文内有2个电压)";
+CM_ BO_ 2564947978 "电池模组电压(一条报文内有2个电压)";
+CM_ BO_ 2564882442 "电池模组电压(一条报文内有2个电压)";
+CM_ BO_ 2564816906 "电池模组电压(一条报文内有2个电压)";
+CM_ BO_ 2466251714 "电池组总电流(mA)";
+CM_ BO_ 2565013511 "电池模组内单体电压最高最低值";
+CM_ BO_ 2564947975 "电池模组内单体电压最高最低值";
+CM_ BO_ 2564882439 "电池模组内单体电压最高最低值";
+CM_ BO_ 2565013513 "电池模组内温度测点最高最低值";
+CM_ BO_ 2564947977 "电池模组内温度测点最高最低值";
+CM_ BO_ 2564882441 "电池模组内温度测点最高最低值";
+CM_ BO_ 2564816905 "电池模组内温度测点最高最低值";
+CM_ BO_ 2564816903 "电池模组内单体电压最高最低值";
 BA_DEF_  "BusType" STRING ;
 BA_DEF_DEF_  "BusType" "CAN";
 
