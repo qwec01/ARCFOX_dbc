@@ -1,0 +1,90 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: MFS
+
+
+BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
+ SG_ steering_pos2 : 0|16@0+ (1,-12544) [-45312|20223] "" Vector__XXX
+
+BO_ 582 accelration: 8 Vector__XXX
+ SG_ acceleration : 31|16@0+ (1,-2000) [-2000|63535] "m/s2" Vector__XXX
+
+BO_ 578 steering2: 8 Vector__XXX
+ SG_ horizantal_acc2 : 47|16@0+ (1,-18000) [-18000|47535] "" Vector__XXX
+ SG_ horizantal_acc1 : 31|16@0+ (1,-2000) [-2000|63535] "" Vector__XXX
+
+BO_ 450 steering1: 8 MFS
+ SG_ steering_pos : 23|16@0+ (1,-12544) [-45312|20223] "" Vector__XXX
+
+BO_ 336 motor: 8 Vector__XXX
+ SG_ motor_spd : 23|16@0+ (1,-32768) [-32768|32767] "rpm" Vector__XXX
+ SG_ moror_torque : 39|16@0+ (0.1,-3276.8) [-3276.8|3276.7] "Nm" Vector__XXX
+
+BO_ 293 distance_unknown: 8 Vector__XXX
+ SG_ distance4 : 47|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ distance3 : 39|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ distance2 : 31|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ distance1 : 23|8@0+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 288 brake_sys: 8 Vector__XXX
+ SG_ Cylinder_pressure_reverse : 55|16@0+ (1,-30000) [-30000|35535] "" Vector__XXX
+ SG_ Cylinder_pressure : 23|16@0+ (1,-4804) [-4804|60731] "" Vector__XXX
+
+
+
+CM_ BU_ MFS "多功能方向盘";
+CM_ BO_ 3221225472 "This is a message for not used signals, created by Vector CANdb++ DBC OLE DB Provider.";
+CM_ SG_ 3221225472 steering_pos2 "方向盘位置2";
+CM_ BO_ 582 "加速度？";
+CM_ SG_ 582 acceleration "加速度？";
+CM_ BO_ 578 "方向机信息2";
+CM_ SG_ 578 horizantal_acc2 "横向加速度2";
+CM_ SG_ 578 horizantal_acc1 "横向加速度1";
+CM_ BO_ 450 "方向机信息？";
+CM_ SG_ 450 steering_pos "方向盘位置";
+CM_ SG_ 336 motor_spd "电机转速";
+CM_ SG_ 336 moror_torque "电机扭矩";
+CM_ BO_ 293 "距离信息";
+CM_ SG_ 293 distance4 "距离4";
+CM_ SG_ 293 distance3 "距离3";
+CM_ SG_ 293 distance2 "距离2";
+CM_ SG_ 293 distance1 "距离1";
+CM_ BO_ 288 "制动系统数据";
+CM_ SG_ 288 Cylinder_pressure_reverse "闸缸压力_反向";
+CM_ SG_ 288 Cylinder_pressure "闸缸压力";
+BA_DEF_  "BusType" STRING ;
+BA_DEF_DEF_  "BusType" "";
+

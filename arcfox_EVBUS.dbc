@@ -1,0 +1,84 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: PDU CCU ECC
+
+
+BO_ 1312 Info_12V: 8 PDU
+ SG_ Voltage12V : 63|8@0+ (0.1,0) [0|0] "V" Vector__XXX
+ SG_ Current12V : 23|16@0+ (0.01,0) [0|0] "A" Vector__XXX
+
+BO_ 889 ACTempAndPwr: 8 ECC
+ SG_ HeatCoreIOutetTemperature2 : 31|8@0+ (1,0) [0|0] "C" Vector__XXX
+ SG_ HeatCoreIOutetTemperature1 : 23|8@0+ (1,0) [0|0] "C" Vector__XXX
+ SG_ HeatCoreInletTemperature : 55|8@0+ (1,0) [0|0] "C" Vector__XXX
+ SG_ ACpwr : 39|16@0+ (0.001,0) [0|65.535] "kW" Vector__XXX
+
+BO_ 881 OutTemperature: 8 ECC
+ SG_ OutTemp : 23|8@0+ (1,0) [0|0] "C" Vector__XXX
+
+BO_ 1754 ChgPortTemperature: 8 CCU
+ SG_ ACChgPortTemperature2 : 63|8@0+ (1,-50) [-50|205] "C" Vector__XXX
+ SG_ ACChgPortTemperature1 : 55|8@0+ (1,-50) [-50|205] "C" Vector__XXX
+ SG_ DCChgPortTemperature2 : 47|8@0+ (1,-50) [-50|205] "C" Vector__XXX
+ SG_ DCChgPortTemperature1 : 39|8@0+ (1,-50) [-50|205] "C" Vector__XXX
+
+BO_ 584 Current: 8 Vector__XXX
+ SG_ Current_248 : 23|16@0+ (0.032,-800) [-250|1847.12] "A" Vector__XXX
+
+BO_ 544 TractionCurrent: 8 Vector__XXX
+ SG_ Voltage : 55|16@0+ (0.02,0) [0|1310.7] "V" Vector__XXX
+ SG_ TractionCurrent : 23|16@0+ (0.1,-3276.8) [-3276.8|3276.7] "A" Vector__XXX
+
+BO_ 336 MCU: 8 Vector__XXX
+ SG_ Torque : 39|16@0+ (0.1,-3300) [-3300|3253.5] "Nm" Vector__XXX
+ SG_ speed : 23|16@0+ (0.01,-327.68) [-327.68|327.67] "kmh-1" Vector__XXX
+
+BO_ 1248 ACpwr: 8 ECC
+ SG_ PTC_power : 63|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ HeatPumpPower : 39|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ _4E0_byte7 : 55|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ _4E0_byte1 : 7|8@0+ (1,0) [0|0] "" Vector__XXX
+
+
+
+CM_ BU_ CCU "充电控制器";
+CM_ BU_ ECC "空调控制器";
+CM_ BO_ 889 "暖风水箱温度&(制热|空调)温度";
+CM_ SG_ 881 OutTemp "外温";
+CM_ BO_ 1248 "空调信息";
+BA_DEF_  "BusType" STRING ;
+BA_DEF_DEF_  "BusType" "CAN";
+
