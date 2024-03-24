@@ -33,17 +33,96 @@ NS_ :
 
 BS_:
 
-BU_: PDU CCU ECC
+BU_: MCU PDU CCU ECC
+VAL_TABLE_ BatteryWaterPump 1 "运转" 0 "停止" ;
+VAL_TABLE_ PRND 68 "D" 67 "R" 66 "N" 65 "P" ;
 
+
+BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
+ SG_ _4E0_byte7 : 0|8@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1282 Temp: 8 Vector__XXX
+ SG_ Temp_502_8 : 63|8@0+ (1,-40) [-40|215] "" Vector__XXX
+ SG_ Temp_502_7 : 55|8@0+ (1,-40) [-40|215] "" Vector__XXX
+ SG_ Temp_502_6 : 47|8@0+ (1,-40) [-40|215] "" Vector__XXX
+ SG_ Temp_502_5 : 39|8@0+ (1,-40) [-40|215] "" Vector__XXX
+ SG_ Temp_502_4 : 31|8@0+ (1,-40) [-40|215] "" Vector__XXX
+ SG_ Temp_502_3 : 23|8@0+ (1,-40) [-40|215] "" Vector__XXX
+ SG_ Temp_502_2 : 15|8@0+ (1,-40) [-40|215] "" Vector__XXX
+ SG_ Temp_502_1 : 7|8@0+ (1,-40) [-40|215] "" Vector__XXX
+
+BO_ 883 AC_wind: 8 ECC
+ SG_ AC_wind : 11|4@0+ (0.5,0) [0|7.5] "" Vector__XXX
+
+BO_ 1366 ChgInfo556: 8 Vector__XXX
+ SG_ ACInputVoltage : 7|16@0+ (1,0) [0|0] "V" Vector__XXX
+
+BO_ 1363 ChgInfo553: 8 CCU
+ SG_ ACAllowedCurrent : 47|8@0+ (1,0) [0|0] "A" Vector__XXX
+ SG_ ACInputVoltage : 23|16@0+ (0.02,0) [0|1310.7] "V" Vector__XXX
+
+BO_ 1360 ChgInfo550: 8 Vector__XXX
+ SG_ Temp550 : 47|8@0+ (1,-50) [0|0] "C" Vector__XXX
+ SG_ AllowedChgCurrent550 : 23|16@0+ (0.02,0) [0|1310.7] "A" Vector__XXX
+
+BO_ 1297 BatHeater: 8 Vector__XXX
+ SG_ BatHeatingIndicator : 2|1@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1169 HVACInfo491: 8 Vector__XXX
+ SG_ CompressorCurrent : 55|16@0+ (0.00025,0) [0|16.38375] "" Vector__XXX
+ SG_ sig491B12 : 7|16@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ WindOutTemp : 47|8@0+ (1,-50) [0|0] "C" Vector__XXX
+ SG_ CompressorFanRun491 : 23|8@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 884 HeatingInfo: 8 ECC
+ SG_ HeatWaterTemp : 23|8@0+ (1,-50) [0|0] "C" Vector__XXX
+ SG_ HeatingIndicator : 47|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ HeatingCurrent : 31|16@0+ (0.001,0) [0|0] "A" Vector__XXX
+
+BO_ 855 Message357: 8 Vector__XXX
+ SG_ BrakeSwitch357 : 7|8@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 853 Temperature355: 8 Vector__XXX
+ SG_ Temp355_2 : 63|8@0+ (1,-50) [0|0] "C" Vector__XXX
+ SG_ Temp355_1 : 55|8@0+ (1,-50) [0|0] "C" Vector__XXX
+
+BO_ 837 BrightnessAndTemp: 8 Vector__XXX
+ SG_ CompressorOutletTemperature : 39|8@0+ (1,-50) [0|0] "C" Vector__XXX
+
+BO_ 792 message318: 8 Vector__XXX
+ SG_ BrakeSwitch318 : 61|1@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1409 GrilleState: 8 ECC
+ SG_ BatteryWaterPump : 2|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ FanRPM : 23|8@0+ (10,0) [0|0] "rpm" Vector__XXX
+ SG_ FanRunIndicator : 12|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ GrilleState : 47|8@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 565 PDU_OBC: 8 PDU
+ SG_ Voltage_235 : 47|16@0+ (0.02,0) [0|1310.7] "V" Vector__XXX
+ SG_ GridVolt : 31|16@0+ (0.25,0) [0|16383.75] "V" Vector__XXX
+
+BO_ 549 MotorCurrent_TorqueLimit: 8 MCU
+ SG_ TorqueLimit : 55|16@0+ (0.01,0) [0|655.35] "Nm" Vector__XXX
+ SG_ MotorCurrent225 : 23|16@0+ (0.04,-1000) [-1000|1621.4] "A" Vector__XXX
+
+BO_ 532 PRND_throttle_brake: 8 Vector__XXX
+ SG_ throotle : 55|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ PRND : 23|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ BrakeSwitch : 56|1@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1410 InteriorEviroment: 8 ECC
+ SG_ PM25 : 63|8@0+ (1,0) [0|255] "ugm-3" Vector__XXX
+ SG_ InteriorTemp : 7|8@0+ (0.5,-25) [-25|102.5] "C" Vector__XXX
 
 BO_ 1312 Info_12V: 8 PDU
  SG_ Voltage12V : 63|8@0+ (0.1,0) [0|0] "V" Vector__XXX
  SG_ Current12V : 23|16@0+ (0.01,0) [0|0] "A" Vector__XXX
 
 BO_ 889 ACTempAndPwr: 8 ECC
- SG_ HeatCoreIOutetTemperature2 : 31|8@0+ (1,0) [0|0] "C" Vector__XXX
- SG_ HeatCoreIOutetTemperature1 : 23|8@0+ (1,0) [0|0] "C" Vector__XXX
- SG_ HeatCoreInletTemperature : 55|8@0+ (1,0) [0|0] "C" Vector__XXX
+ SG_ HeatCoreIOutetTemperature2 : 31|8@0+ (1,-50) [0|0] "C" Vector__XXX
+ SG_ HeatCoreIOutetTemperature1 : 23|8@0+ (1,-50) [0|0] "C" Vector__XXX
+ SG_ HeatCoreInletTemperature : 55|8@0+ (1,-50) [0|0] "C" Vector__XXX
  SG_ ACpwr : 39|16@0+ (0.001,0) [0|65.535] "kW" Vector__XXX
 
 BO_ 881 OutTemperature: 8 ECC
@@ -56,29 +135,80 @@ BO_ 1754 ChgPortTemperature: 8 CCU
  SG_ DCChgPortTemperature1 : 39|8@0+ (1,-50) [-50|205] "C" Vector__XXX
 
 BO_ 584 Current: 8 Vector__XXX
- SG_ Current_248 : 23|16@0+ (0.032,-800) [-250|1847.12] "A" Vector__XXX
+ SG_ AhRemaining : 39|16@0+ (1,0) [0|0] "Ah" Vector__XXX
+ SG_ AhBurnt : 55|16@0+ (1,0) [0|0] "Ah" Vector__XXX
+ SG_ Current_248 : 23|16@0+ (0.04,-1000) [-1000|1621.4] "A" Vector__XXX
 
 BO_ 544 TractionCurrent: 8 Vector__XXX
+ SG_ MotorCurrent220 : 39|16@0+ (1,-32768) [-32768|32767] "A" Vector__XXX
  SG_ Voltage : 55|16@0+ (0.02,0) [0|1310.7] "V" Vector__XXX
  SG_ TractionCurrent : 23|16@0+ (0.1,-3276.8) [-3276.8|3276.7] "A" Vector__XXX
 
-BO_ 336 MCU: 8 Vector__XXX
- SG_ Torque : 39|16@0+ (0.1,-3300) [-3300|3253.5] "Nm" Vector__XXX
- SG_ speed : 23|16@0+ (0.01,-327.68) [-327.68|327.67] "kmh-1" Vector__XXX
+BO_ 336 MCU: 8 MCU
+ SG_ TractionAllowed : 59|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DynamicBrake : 60|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Torque : 39|16@0+ (0.1,-3276.8) [-3276.8|3276.7] "Nm" Vector__XXX
+ SG_ MotorRPM : 23|16@0+ (1,-32768) [-32768|32767] "RPM" Vector__XXX
 
 BO_ 1248 ACpwr: 8 ECC
+ SG_ PTC2RunIndicator4E0 : 51|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ PTC1RunIndicator4E0 : 52|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ CompressorRunIndicator4E0 : 53|1@0+ (1,0) [0|0] "" Vector__XXX
  SG_ PTC_power : 63|8@0+ (1,0) [0|0] "" Vector__XXX
  SG_ HeatPumpPower : 39|8@0+ (1,0) [0|0] "" Vector__XXX
- SG_ _4E0_byte7 : 55|8@0+ (1,0) [0|0] "" Vector__XXX
  SG_ _4E0_byte1 : 7|8@0+ (1,0) [0|0] "" Vector__XXX
 
 
 
+CM_ BU_ MCU "电机控制器";
+CM_ BU_ PDU "高压电力集成单元";
 CM_ BU_ CCU "充电控制器";
 CM_ BU_ ECC "空调控制器";
+CM_ BO_ 3221225472 "This is a message for not used signals, created by Vector CANdb++ DBC OLE DB Provider.";
+CM_ SG_ 883 AC_wind "空调风速";
+CM_ BO_ 1366 "交流输入电压？";
+CM_ SG_ 1366 ACInputVoltage "交流输入电压";
+CM_ BO_ 1363 "充电电流？";
+CM_ SG_ 1363 ACAllowedCurrent "允许AC充电电流";
+CM_ SG_ 1363 ACInputVoltage "交流输入电流？";
+CM_ BO_ 1360 "允许充电电流？
+温度？";
+CM_ SG_ 1360 AllowedChgCurrent550 "允许充电电流？";
+CM_ BO_ 1297 "电池加热信息";
+CM_ BO_ 1169 "制热信息";
+CM_ SG_ 1169 CompressorFanRun491 "压缩机/风扇运行指示";
+CM_ BO_ 884 "制热信息";
+CM_ SG_ 884 HeatWaterTemp "暖风水温度";
+CM_ SG_ 884 HeatingIndicator "加热指示";
+CM_ SG_ 884 HeatingCurrent "加热电流";
+CM_ BO_ 855 "不太一样的刹车开关";
+CM_ BO_ 853 "温度？";
+CM_ BO_ 837 "亮度、压缩机出口温度";
+CM_ BO_ 792 "小计里程、速度、刹车开关";
+CM_ BO_ 1409 "B1b4=压缩机/风扇运行指示？
+B3=压缩机电流？
+B6=主动格栅开度?";
+CM_ SG_ 1409 FanRunIndicator "风扇运行指示";
+CM_ SG_ 1409 GrilleState "主动格栅开度？";
+CM_ BO_ 565 "PDU充电机报文，电网电压与电池电压？";
+CM_ SG_ 565 Voltage_235 "电池电压 精度0.02V";
+CM_ SG_ 565 GridVolt "交流侧电网电压？";
+CM_ BO_ 549 "电机电流？扭矩限制？";
+CM_ SG_ 549 TorqueLimit "扭矩限制？";
+CM_ SG_ 549 MotorCurrent225 "电机电流？";
+CM_ SG_ 532 PRND "档位";
+CM_ BO_ 1410 "车内环境数据";
 CM_ BO_ 889 "暖风水箱温度&(制热|空调)温度";
-CM_ SG_ 881 OutTemp "外温";
+CM_ SG_ 881 OutTemp "外温_不是";
+CM_ SG_ 584 AhRemaining "剩余Ah数？";
+CM_ SG_ 584 AhBurnt "消耗Ah数？";
+CM_ SG_ 544 MotorCurrent220 "电机电流？";
+CM_ SG_ 336 TractionAllowed "允许牵引";
+CM_ SG_ 336 DynamicBrake "电制动指示";
 CM_ BO_ 1248 "空调信息";
+CM_ SG_ 1248 CompressorRunIndicator4E0 "压缩机运行指示";
 BA_DEF_  "BusType" STRING ;
 BA_DEF_DEF_  "BusType" "CAN";
+VAL_ 1409 BatteryWaterPump 1 "运转" 0 "停止" ;
+VAL_ 532 PRND 68 "D" 67 "R" 66 "N" 65 "P" ;
 
